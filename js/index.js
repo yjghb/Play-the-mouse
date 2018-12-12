@@ -21,7 +21,7 @@
 
        var timeId = setInterval(function () {
            var num = Math.floor(Math.random() * 9);
-        //    console.log(num);
+           //    console.log(num);
            $('.mouse').eq(num).animate({
                top: 0,
            }, function () {
@@ -54,7 +54,10 @@
 
            // 按下有audio啊音效
            var audio = document.getElementById("audio");
-           audio.play();
+           if (audio.paused) {
+               audio.play();
+           }
+
        })
 
 
@@ -70,7 +73,7 @@
        // var main = document.querySelector('.main');
        // var chuizi = document.querySelector('.chuizi');
 
-       
+
 
        // 鼠标点击换图
        // $('.main').on('mousedown', function () {
@@ -112,7 +115,7 @@
        //        console.log(11);
        //    })
 
-       
+
 
 
 
