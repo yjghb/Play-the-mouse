@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="jquery/jquery-1.12.4.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="score">
+            分数:<span class="score-show">0</span>
+            <span>倒计时:</span><span id="time">20</span>
+        </div>
+
+        <div class="box">
+            <div class="circle">
+                <img src="img/hole.png" alt="">
+                <div class="slide">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+            <div class="circle">
+                <img src="img/hole.png" alt="">
+                <div class="slide">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+            <div class="circle">
+                <img src="img/hole.png" alt="">
+                <div class="slide">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+            <div class="circle">
+                <img src="img/hole.png" alt="">
+                <div class="slide">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+            <div class="circle">
+                <img src="img/hole.png" alt="">
+                <div class="slide">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+            <div class="circle">
+                <img src="img/hole.png" alt="">
+                <div class="slide">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+            <div class="circle">
+                <img src="img/hole.png" alt="">
+                <div class="slide">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+            <div class="circle">
+                <img src="img/hole.png" alt="">
+                <div class="slide">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+            <div class="circle">
+                <img src="img/hole.png" alt="">
+                <div class="slide">
+                    <div class="mouse"></div>
+                </div>
+            </div>
+
+            <div class="chuizi"></div>
+            
+            <audio id="audio" src="audio/daji.wav"></audio>
+            <!-- <audio id="audio" src="audio/zhutu.mp3" autoplay="autoplay"></audio> -->
+
+        </div>
+        <div id="mask">
+            <div class="result">
+                <h4>GAME OVER</h4>
+                <span>总分数:</span><span class="score-show"></span>
+                <input type="button" id="again" onclick="again()" value="再来一次">
+            </div>
+        </div>
+    </div>
+</body>
+
+<script>
+    function again(){
+        window.location.reload(); 
+    }
+</script>
+</html>
